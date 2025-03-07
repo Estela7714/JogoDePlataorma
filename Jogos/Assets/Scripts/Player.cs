@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
    void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "chao")
+        if (collision.gameObject.tag == "Chao")
         {
             noChao = true;
         }
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "chao")
+        if (collision.gameObject.tag == "Chao")
         {
             noChao = false;
         }
